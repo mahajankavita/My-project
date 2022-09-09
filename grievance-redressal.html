@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns  ng-app="App" ng-controller="MainController" ng-init="init();$root.scrollhide='bodymain';showmainloader=true;" ng-class="$root.scrollhide">
+
+<head>
+
+<script type="1aa420f12ddb8e8c6576554c-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WJXJGK2');</script>
+
+<script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "About Us",
+        "description": "insurejoy.com simply makes insurance joyful for you. Here you can get quotes from various insurance companies, make price-feature comparisons and see what each company has to offer.",
+        "url": "/about-us",
+        "brand": {
+        "@type": "Brand",
+        "name": "insurejoy",
+        "logo": "/images/logo.png"
+        }
+        }
+    </script>
+<title>Grievance</title>
+<meta name="Robots" content="NOINDEX " />
+<meta name="description" content="Drop an email at po@insuregram.in if you wish to file a complaint about insurance or Insurejoy.com. Our Grievance Redressal Team will be in touch with you as soon as possible.
+" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link rel="shortcut icon" href="images/insurejoy-favicon.png" type="image/png" />
+<meta name="google-site-verification" content="AedqS0tmPdIS2jVwMZOOrkYdLud96VzRfJF9vKXqVpI" />
+<meta name="msvalidate.01" content="9F2ADB79BCFC18302DABF82FCB808826" />
+<link href="internalcss/angular-material.min.css" rel="stylesheet" type="text/css" />
+<link href="internalcss/productPages/product-style.css" rel="stylesheet" type="text/css" />
+<link href="sass/internalst.css" rel="stylesheet" type="text/css" />
+<link href="internalcss/productPages/product-new.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJXJGK2"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+<div class="pagewrapper">
+<header ng-class="$root.showHeaderClass">
+
+<nav class="navproduct">
+
+<div class="leftarea">
+<svg class="hamburger" onclick="if (!window.__cfRLUnblockHandlers) return false; openNav()" data-cf-modified-1aa420f12ddb8e8c6576554c-="">
+<use xlink:href="images/sprite.svg#hamburger"></use>
+</svg>
+<svg class="logo" style="position: relative; z-index: 0;" ng-click="getIndex('/')">
+<!-- <use xlink:href="images/sprite.svg#ijlogo-blue"></use> -->
+<h1>MY COMPANY</h1>
+</svg>
+</div>
+<div class="rightarea">
+<ul ng-if="device == 'Desktop'">
+<li><a class="dropbtn" href="index.html" ng-click="header('Home')">Home</a></li>
+<li><a class="dropbtn" href="about.html" ng-click="header('About Us')">About</a></li>
+<li>
+<div class="dropdown">
+<a class="dropbtn" ng-click="openLife();">
+Life
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+ <a class="limr1" href="term-insurance.html" ng-click="header('Term')">Term</a>
+<a class="limr1" href="child-plans.html" ng-click="header('Child')">Child</a>
+<a class="limr1" href="investment-plans.html" ng-click="header('Investment')">Investment</a>
+<a class="limr1" href="pension-plans.html" ng-click="header('Pension')">Pension</a>
+</div>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a class="dropbtn">
+Health
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+<a class="limr1" href="health-insurance.html" ng-click="header('Health')">Health</a>
+<a class="limr1" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness</a>
+</div>
+</div>
+</li>
+<li><a class="dropbtn" href="car-insurance.html" ng-click="header('Car')">Car</a></li>
+<li><a class="dropbtn" href="bike-insurance.html" ng-click="header('Bike')">Bike</a></li>
+<li class="mobnumber">Service : <span>1800 309 5566</span></li>
+</ul>
+</div>
+</nav>
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="if (!window.__cfRLUnblockHandlers) return false; closeNav()" data-cf-modified-1aa420f12ddb8e8c6576554c-="">&times;</a>
+<div class="overlay-content">
+<a class="" href="about.html" ng-click="header('About Us')">About Us</a>
+<a class="" href="term-insurance.html" ng-click="header('Term')">Term Insurance</a>
+<a class="" href="child-plans.html" ng-click="header('Child')">Child Plans</a>
+<a class="" href="investment-plans.html" ng-click="header('Investment')">Investment Plans</a>
+<a class="" href="pension-plans.html" ng-click="header('Pension')">Pension Plans</a>
+<a class="" href="health-insurance.html" ng-click="header('Health')">Health Insurance</a>
+<a class="" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness Cover</a>
+<a class="" href="car-insurance.html" ng-click="header('Car')">Car Insurance</a>
+<a class="" href="bike-insurance.html" ng-click="header('Bike')">Bike Insurance</a>
+<a href="contact.html">Contact Us</a>
+<a> <span class="cnstyle">Service : <span>1800 309 5566</span></span></a>
+</div>
+</div>
+</header>
+<main id="fh5co-page">
+<section class="bannerarea ">
+<div class="container flend complaintHandlingbg">
+<div class="bannercontent col-md-6 col-sm-9 col-xs-12 col-xxs-12 text-center">
+<h1> Complaint Handling <span> Process</span></h1>
+<p class="text-center">
+“Complaint” or “Grievance” means, an expression of dissatisfaction made by a customer made against Insurance Company, Sales Agent, Broking partner
+</p>
+</div>
+</div>
+</section>
+<section class="section_row2 ">
+<div class="container text-container-c">
+<h2>Introduction</h2>
+<div class="col-md-12 col-sm-12 col-xs-12">
+<span class="subh-c font-22">What is a complaint?</span>
+<span class="txth-c"> “Complaint” or “Grievance” means, an expression of dissatisfaction made by a customer in any mode made against Insurance Company, Sales Agent, Broking partner, due to any of the reasons below:</span>
+<ul>
+<li>Non-adherence to a stipulated Turn-Around-Time (TAT)</li>
+<li>Non- fulfillment of a promise or any regulatory requirement.</li>
+<li>Misrepresentation or suppression of facts to the customer.</li>
+<li>Deficiency of service regarding insurance policies bought by him or her using insurejoy.com services.</li>
+</ul>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12">
+<span class="subh-c font-22">Objective</span>
+<span class="txth-c">Every complaint will be treated and addressed in a neutral and unbiased method.</span>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12">
+<span class="subh-c font-22">Confidentiality</span>
+<span class="txth-c">We maintain complete confidentiality of the client’s information; unless expressly permitted by him or her.</span>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12">
+<span class="subh-c font-22">Customer focused approach</span>
+<span class="txth-c">We at insurejoy.com, including the key management personnel, remain committed to the efficient processing of complaints. We actively solicit feedback on a regular basis to keep improving our standards in complaint handling.</span>
+<span class="txth-c">Below is the information needed while raising a complaint.</span>
+<ul>
+<li>Policy Number and Insurer Name</li>
+<li>Your name and contact details</li>
+<li>Supporting documents for the complaint ( if any)</li>
+</ul>
+</div>
+<p><span class="subh-c font-22">Assistance with making a complaint:</span> If you need assistance in articulating or to raise a complaint, you may mark an email at <a href="cdn-cgi/l/email-protection.html#bcdfd3d1ccd0ddd5d2c8cffcd5d2cfc9ced9d6d3c592dfd3d1"><span class="__cf_email__" data-cfemail="5c3f33312c303d3532282f1c35322f292e39363325723f3331">[email&#160;protected]</span></a>.</p>
+</div>
+<div class="container text-container-c">
+<div class="panel-group" id="accordion-alt11">
+<div class="panel">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion-alt11" href="#collapseone-alt11" class="collapsed"> <span><img src="images/spend-arrow.png" width="20" alt=""></span>Register a Complaint</a>
+</h4>
+</div>
+<div id="collapseone-alt11" class="panel-collapse collapse">
+<div class="panel-body">
+<form class="col-md-8 col-sm-12 col-xs-12 col-xxs-12 complaint-field nopad" method="post" action="#">
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Customer Name
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Name</label>
+<input ng-model="customerName" name="name" class="border-none" type="text" placeholder="Enter your Name" alphabetspace ng-trim="true" ng-disabled="disabled" ng-blur="complaintValidation('name')" />
+<span ng-show="nameError" ng-cloak class="fielderror errorcomplaint">{{nameErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Registered Email Id
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Email Id</label>
+<input ng-model="customerEmail" name="email" class="border-none" type="email" placeholder="Enter your email" ng-disabled="disabled" ng-blur="complaintValidation('email')" />
+<span ng-show="emailError" ng-cloak class="fielderror errorcomplaint">{{emailErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Your Mobile Number
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Mobile</label>
+<input ng-model="customerNumber" maxlength="10" name="number" class="border-none" type="tel" numbers-only placeholder="Enter your Number" ng-disabled="disabled" ng-blur="complaintValidation('mobile')" />
+<span ng-show="mobileError" ng-cloak class="fielderror errorcomplaint">{{mobileErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Product
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+ <label class="landing-selectlabel2">Select a Product</label>
+<md-select ng-model="customerProduct" class="landing-select" ng-disabled="disabled" md-on-close="complaintValidation('product');getInsurerByProduct(customerProduct)">
+<md-option ng-repeat="data in products track by $index" value="{{data.id}}">{{data.product}}</md-option>
+</md-select>
+<span ng-show="productError" ng-cloak class="fielderror1 errorcomplaint">{{productErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12 ">
+<span ng-show="customerProduct=='3' || customerProduct=='5' || customerProduct=='7' || customerProduct=='6'" ng-cloak><a class="showcarmainform " href="life-insurance-claim.html">Click here to know the Life Insurance Claim Procees </a></span>
+<span ng-show="customerProduct=='2' || customerProduct=='9'" ng-cloak><a class="showcarmainform " href="health_claim.html">Click here to know the Health Insurance Claim Procees </a></span>
+<span ng-show="customerProduct=='4' || customerProduct=='8'" ng-cloak><a class="showcarmainform " href="claimprocess_auto.html">Click here to know the Motor Insurance Claim Procees</a></span>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Type of Issue
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Select an Issue</label>
+<md-select ng-model="typeofissue" class="landing-select" ng-disabled="disabled" md-on-close="complaintValidation('issuetype')">
+<md-option ng-repeat="data in typeOfIssue track by $index" value="{{data.issue}}">{{data.issue}}</md-option>
+</md-select>
+<span ng-show="issueError" ng-cloak class="fielderror1 errorcomplaint">{{issueErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb" ng-show="isInsurer">
+<div class="col-md-12 popuph">
+Insurer
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Select an Insurer</label>
+<md-select ng-model="insurer" class="landing-select" ng-disabled="disabled" md-on-close="complaintValidation('insurer')">
+<md-option ng-repeat="data in insuranceCompanies | unique:'Insurer_ID'" value="{{data.Insurer_ID}}">{{data.Insurer_Name}}</md-option>
+</md-select>
+ <span ng-show="insurerError" ng-cloak class="fielderror1 errorcomplaint">{{insurerErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12 col-xxs-12 text-center martopb" ng-show="isPolicyNo">
+<div class="col-md-12 popuph">
+Policy No.
+</div>
+<md-input-container class="landing-selectcontainer2 l-a2">
+<label class="landing-selectlabel2">Enter your Policy No.</label>
+<input ng-minlength="5" policy-number ng-maxlength="20" ng-model="policyNo" name="claimPolicyNo" class="border-none" type="text" ng-trim="true" placeholder="Enter Policy No." ng-disabled="disabled" ng-blur="complaintValidation('policyno')" />
+<span ng-show="policyError" ng-cloak class="fielderror errorcomplaint">{{policyErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12 text-center martopb">
+<div class="col-md-12 popuph">
+Description
+</div>
+<md-input-container class="landing-selectcontainer2 textarea-description l-a2">
+<label class="landing-selectlabel2">Enter Description</label>
+<textarea rows="8" id="" alphabet-numberspace ng-model="description" name="claimDescription" class="border-none textarea-description" placeholder="Pour your heart out" ng-disabled="disabled" ng-blur="complaintValidation('description')"></textarea>
+<span ng-cloak ng-show="decrError" class="fielderror errorcomplaint">{{decrErrorMessage}}</span>
+</md-input-container>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12 martopb text-center">
+<button ng-click="submitComplaint()" class="quotesbtn1 mrgtb submitBtn" ng-show="complainBtn" type="button" ng-disabled="disabledBtn || complainBtnLoader">
+<span ng-show="!complainBtnLoader" ng-disabled="complainBtnLoader">Submit</span>
+<span class="saving" ng-cloak ng-show="complainBtnLoader"><span>.</span><span>.</span><span>.</span></span>
+</button>
+<p class="fielderror" ng-show="error" style="display: block;text-align: center !important; width: 100%;">
+{{errormsg}}
+</p>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12  text-left">
+<h3 class="text-success" ng-show="successmsg">
+We have received your complaint. Your Ticket ID is <b>{{id}}</b>.
+</h3> </div>
+</form>
+ <div style="clear: both;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=" secbgcolor">
+<div class="container text-container-c">
+<h2>Further action</h2>
+<span class="txth-c">If you are not satisfied with the procedure in which your complaint was handled; you have the right to ask insurejoy.com team for the Insurance Ombudsman address as per the jurisdiction. Link: <a href="http://www.cioins.co.in/ombudsman.html" target="_blank">(http://www.cioins.co.in/ombudsman.html)</a></span>
+</div>
+</section>
+<section>
+<div class="container text-container-c ">
+<h2>Making Complaint with IRDAI</h2>
+<p class="to-animate intro-animate-2 "><span class="txth-c">The insurance company should resolve your complaint within 14 days. <span class="subh-c">In case, the complaint is not resolved within 14 days or in case you are not satisfied with the resolution provided; you may:</span></span></p>
+<div class="col-md-6 col-sm-12 col-xs-12 ">
+<div class="boxaction1 text-left">
+<span>Approach the Grievance Redressal Cell</span> of the Consumer Affairs Department of IRDAI
+<ul class="complist ">
+<li>Call Toll Free Number <span style=" font-weight:bold;" class="complink "> 155255</span> (or) <span style=" font-weight:bold;"> 1800 4254 732</span> or</li>
+<li>Send an e-mail to <a class="blue1link" href="cdn-cgi/l/email-protection.html#18707d7468587b777568747971766c6b58716a7c79367f776e367176"> <span class="__cf_email__" data-cfemail="b2d1dddfc2ded3dbdcc6c1f2dbc0d6d39cd5ddc49cdbdc">[email&#160;protected]</span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12  ">
+<div class="boxaction1 text-left">
+<span style=" font-weight:bold;">Make use of IRDAI's online portal</span> - Integrated Grievance Management System (IGMS):
+<ul class="complist ">
+<li>Register and monitor your complaint <a class="blue1link" href="http://igms.irda.gov.in/"> igms.irda.gov.in</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 ">
+<div class="boxaction1 text-left">
+<span>Send a letter to IRDAI with your complaint:</span>
+<ul class="complist ">
+<li>
+<a class="blue1link" target="_blank " href="http://www.policyholder.gov.in/uploads/CEDocuments/complaintform.pdf">Click here </a>to download Complaint Registration Form
+</li>
+<li>
+Duly fill the Complaint Registration Form along with the complaint letter and enclose all relevant documents and send it via post or courier on the below address:
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12  text-container-c">
+<p>The General Manager, Insurance Regulatory and Development Authority of IndiaConsumer Affairs Department – Grievance Redressal Cell.</p>
+ <p>Sy.No.115/1, Financial District, Nanakramguda, Gachibowli, Hyderabad – 500 032</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="purple section ">
+    <div class="footerarea ">
+    <div class="container ">
+    <div class="companyintro">
+    <!-- <img class="logofooter" ng-click="getIndex('/')" src="images/ijlogo-white.svg" alt="insurejoy.com" width="" height="" /> -->
+    <h1 >My Company</h1>
+    <!-- <p>4th Floor, N Heights Building, Plot No 12, Software Unit Layout, Madhapur, Hyderabad, Telangana - 500081, India</p>
+    <p>
+    Licensed by - IRDA/DB838/20 (License category- Direct Broker (Life & General))
+    </p>
+    <p>
+    
+    </p> -->
+    <p><span> CIN:</span>17000 305 4688 </p>
+    <p>For Complaints and Grievances, Please write at
+    <a style=" text-decoration: underline; " target="_blank " href="#"><span class="__cf_email__">Shivamahale23@gmail.com</span></a>
+    </p>
+    <h4>We'd love to hear from you</h4>
+    </div>
+    <div class="contactarea">
+    <div class=" contbox">
+    <a ng-click="footer( 'Email') " href="#">
+    <svg class="animated " role="img" aria-label="help">
+    <use xlink:href="images/sprite.svg#email"></use>
+    </svg>
+    <span><span class="__cf_email__" data-cfemail="">Shivamahale23@gmail.com</span></span>
+    </a>
+    </div>
+    <div ng-click="footer( 'Mobile') " class="contbox " tabindex="0 ">
+    <svg class=" animated " role="img" aria-label="call">
+    <use xlink:href="images/sprite.svg#call"></use>
+    </svg>
+    <span>1700 409 0966</span>
+    </div>
+    <div class="contbox">
+    <a href="https://www.facebook.com" target="_blank " ng-click="footer( 'Facebook') ">
+    <svg class="animated " role="img" aria-label="Facebook">
+    <use xlink:href="images/sprite.svg#facebook"></use>
+     </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " role="img" aria-label="Twitter">
+    <svg class=" animated ">
+    <use xlink:href="images/sprite.svg#twitter"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') ">
+    <svg class=" animated " role="img" aria-label="Linkedin">
+    <use xlink:href="images/sprite.svg#linkedin"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " style="visibility: visible; ">
+    <svg class="animated " role="img" aria-label="youtube">
+    <use xlink:href="images/sprite.svg#youtube"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="pinterest">
+    <use xlink:href="images/sprite.svg#pinterest"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="instagram">
+    <use xlink:href="images/sprite.svg#instagram"></use>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div class="mainlinkarea">
+    <div class="linkbox ">
+    <h5 class="heading5 ">Company</h5>
+    <ul>
+    <li>
+    <a href="index.html" ng-click="footer( 'Home') ">Home</a>
+    </li>
+    <li>
+    <a href="about.html" ng-click="footer( 'About Us') ">About Us</a>
+    </li>
+    <li>
+    <a href="careers.html" ng-click="footer( 'Careers') ">Careers</a>
+    </li>
+    <li>
+    <a href="contact.html" ng-click="footer( 'Contact Us') ">Contact Us</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox ">
+    <h5 class="heading5 ">Library</h5>
+    <ul>
+    <li>
+    <a href="https://blog.insurejoy.com/" ng-click="footer( 'Insurance Knowledge') ">Insurance Blog</a>
+    </li>
+    <li>
+    <a href="partners.html" ng-click="footer( 'Insurance Companies') ">Our Partners</a>
+    </li>
+    <li>
+    <a href="frequently-asked-questions.html" ng-click="footer( 'FAQs') ">FAQs</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 " ng-click="openLife();footer( 'Life') ">Life Insurance</h5>
+    <ul>
+    <li>
+    <a href="term-insurance.html" ng-click="footer( 'Term') ">Term</a>
+    </li>
+    <li>
+    <a href="child-plans.html" ng-click="footer( 'Child') ">Child</a>
+    </li>
+    <li>
+    <a href="investment-plans.html" ng-click="footer( 'Investment') ">Investment</a>
+    </li>
+    <li>
+    <a href="pension-plans.html" ng-click="footer( 'Pension') ">Pension</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 ">General Insurance</h5>
+    <ul>
+    <li>
+    <a href="car-insurance.html" ng-click="footer( 'Car Insurance') ">Car Insurance</a>
+    </li>
+    <li>
+    <a href="bike-insurance.html" ng-click="footer( 'Bike Insurance') ">Bike Insurance</a>
+    </li>
+    <li>
+    <a href="health-insurance.html" ng-click="footer( 'Health Insurance') ">Health Insurance</a>
+    </li>
+    <li>
+    <a href="critical-illness-insurance.html" ng-click="footer( 'Critical Illness') ">Critical Illness</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="linkarea">
+    
+    <a href="grievance-redressal.html">Grievance Redressal</a>
+    <a href="terms-and-conditions.html" ng-click="footer( 'Terms &amp; Conditions') ">Terms &amp;
+    Conditions</a>
+    <a href="privacy-policy.html" ng-click="footer( 'Privacy Policy') ">Privacy Policy</a>
+    <a href="legal.html" ng-click="footer( 'Legal') ">Legal</a>
+    </div>
+    <!-- <div class="payoptionarea ">
+    <span>Payment Methods</span>
+    <svg>
+    <use xlink:href="images/sprite.svg#paymentops"></use>
+    </svg>
+    </div>
+    <div class="disclaimersarea">
+    <p>
+    <span> DISCLAIMER:</span> <span>
+    Kindly note that insurejoy.com can share the particulars of clients/visitors with the insurers for the purpose of soliciting
+    insurance policies. Insurance is the subject matter of Solicitation. For more details on risk factors, terms and conditions please read
+    sales brochure carefully before concluding a sale. Tax benefits are subject to changes in taxation laws. Terms and Conditions shall apply
+    for standard insurance plans. Product Information is authentic and solely based on the information received from the insurer
+    </span>
+    </p> -->
+    <span>
+    Copyright 2022 MyCompany.com. All Rights Reserved.
+    </span>
+    </div>
+    </div>
+    </div>
+    </footer></div>
+<link href="sass/animate.min.css" rel="stylesheet" type="text/css" />
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/script/external.min.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/script/localStorage.js"></script>
+<script src="internaljs/script/pikaday-angular.js" type="1aa420f12ddb8e8c6576554c-text/javascript"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/script/pikaday.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/common/Controller/app.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/common/Services/services.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/common/Factory/DataFactory.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/common/Factory/CommonFactory.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/common/Factory/Term-Factory.js"></script>
+<script src="internaljs/common/directive.js" type="1aa420f12ddb8e8c6576554c-text/javascript"></script>
+<script src="internaljs/common/Factory/ValidationFactory.js" type="1aa420f12ddb8e8c6576554c-text/javascript"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript" src="internaljs/third-party-script/ruleup-aes.js"></script>
+<script type="1aa420f12ddb8e8c6576554c-text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1aa420f12ddb8e8c6576554c-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74255492abcf4cdd","token":"21d39aec2919455496f3629a9add23fe","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.insurejoy.com/grievance-redressal by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:36:57 GMT -->
+</html>
