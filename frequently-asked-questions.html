@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns ng-app="App" ng-controller="faqCtrl" ng-init="init();$root.scrollhide='bodymain';showmainloader=true;" ng-class="$root.scrollhide">
+
+<head>
+
+<script type="1721414db8c3a0c0b851f62f-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WJXJGK2');</script>
+
+<title>Frequently</title>
+<meta name="description" content="Have a question? Quick answers to your questions about insurance products, policies, claims, terms and conditions, as well as the plan offers.   
+" />
+<link rel="shortcut icon" href="images/insurejoy-favicon.png" type="image/png" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<link href="internalcss/angular-material.min.css" rel="stylesheet" type="text/css" />
+<link href="internalcss/productPages/product-style.css" rel="stylesheet" type="text/css" />
+<link href="sass/internalst.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+</head>
+<body class="nav-size">
+
+<noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJXJGK2"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+<div class="pagewrapper">
+<header ng-class="$root.showHeaderClass">
+
+<nav class="navproduct">
+
+<div class="leftarea">
+<svg class="hamburger" onclick="if (!window.__cfRLUnblockHandlers) return false; openNav()" data-cf-modified-1721414db8c3a0c0b851f62f-="">
+<!-- <use xlink:href="images/sprite.svg#hamburger"></use> -->
+<h1>MY COMPANY</h1>
+</svg>
+<svg class="logo" style="position: relative; z-index: 0;" ng-click="getIndex('/')">
+<use xlink:href="images/sprite.svg#ijlogo-blue"></use>
+</svg>
+</div>
+<div class="rightarea">
+<ul ng-if="device == 'Desktop'">
+<li><a class="dropbtn" href="index.html" ng-click="header('Home')">Home</a></li>
+<li><a class="dropbtn" href="about.html" ng-click="header('About Us')">About</a></li>
+<li>
+<div class="dropdown">
+<a class="dropbtn" ng-click="openLife();">
+Life
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+<a class="limr1" href="term-insurance.html" ng-click="header('Term')">Term</a>
+<a class="limr1" href="child-plans.html" ng-click="header('Child')">Child</a>
+<a class="limr1" href="investment-plans.html" ng-click="header('Investment')">Investment</a>
+<a class="limr1" href="pension-plans.html" ng-click="header('Pension')">Pension</a>
+</div>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a class="dropbtn">
+Health
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+<a class="limr1" href="health-insurance.html" ng-click="header('Health')">Health</a>
+<a class="limr1" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness</a>
+</div>
+</div>
+</li>
+<li><a class="dropbtn" href="car-insurance.html" ng-click="header('Car')">Car</a></li>
+<li><a class="dropbtn" href="bike-insurance.html" ng-click="header('Bike')">Bike</a></li>
+<li class="mobnumber">Service : <span>1700 209 0066</span></li>
+</ul>
+</div>
+</nav>
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="if (!window.__cfRLUnblockHandlers) return false; closeNav()" data-cf-modified-1721414db8c3a0c0b851f62f-="">&times;</a>
+<div class="overlay-content">
+<a class="" href="about.html" ng-click="header('About Us')">About Us</a>
+<a class="" href="term-insurance.html" ng-click="header('Term')">Term Insurance</a>
+<a class="" href="child-plans.html" ng-click="header('Child')">Child Plans</a>
+<a class="" href="investment-plans.html" ng-click="header('Investment')">Investment Plans</a>
+<a class="" href="pension-plans.html" ng-click="header('Pension')">Pension Plans</a>
+<a class="" href="health-insurance.html" ng-click="header('Health')">Health Insurance</a>
+<a class="" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness Cover</a>
+<a class="" href="car-insurance.html" ng-click="header('Car')">Car Insurance</a>
+<a class="" href="bike-insurance.html" ng-click="header('Bike')">Bike Insurance</a>
+<a href="contact.html">Contact Us</a>
+<a> <span class="cnstyle">Service : <span>1700 209 0066</span></span></a>
+</div>
+</div>
+</header>
+<main id="fh5co-page">
+<section class="bannerarea  ">
+<div class="container flend faqs">
+
+<div class="bannercontent col-md-6 col-sm-9 col-xs-12 col-xxs-12 text-center">
+<h1> FAQs</h1>
+<div class="input-outersearch w-100">
+<div class="addremove">
+<input type="text" ng-model="search" class="inputfield faq-input m-t-md" ng-keyup="cross()" placeholder="Search..." ng-cloak>
+<div ng-click="removeQues()" ng-show="remove" class="clear" ng-cloak></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section_row">
+<div class="container ">
+<div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12 faqsidemenu">
+<ul class="faqmenu">
+<li><a ng-class="GeneralClass" ng-click="FAQdata(8)">General</a></li>
+<li><a ng-class="CarClass" ng-click="FAQdata(1)">Car Insurance</a></li>
+<li><a ng-class="TravelClass" ng-click="FAQdata(2)">Travel Insurance</a></li>
+<li><a ng-class="HealthClass" ng-click="FAQdata(3)">Health Insurance</a></li>
+<li><a ng-class="TermClass" ng-click="FAQdata(4)">Term Plans</a></li>
+<li><a ng-class="ChildClass" ng-click="FAQdata(5)">Child Plans</a></li>
+<li><a ng-class="InvestmentClass" ng-click="FAQdata(6)">Investment Plans</a></li>
+<li><a ng-class="PensionClass" ng-click="FAQdata(7)">Pension Plans</a></li>
+</ul>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12 col-xxs-12 fh5co-section-heading text-left faqcontentright">
+<h3 ng-show="searchResult" ng-cloak style="padding: 2px 0px; margin-top: 0px;">
+"{{search}}" keyword found in {{results.length}} search results
+</h3>
+<h4 ng-cloak>
+{{FAQname}}
+</h4>
+
+<div class="faqText" ng-repeat="data in Table1 | filter:search as results" style="padding: 10px;" ng-cloak>
+<div>
+<b ng-bind-html="data.FaqQes"></b>
+</div>
+<div ng-bind-html="data.FaqAns"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="purple section ">
+    <div class="footerarea ">
+    <div class="container ">
+    <div class="companyintro">
+    <!-- <img class="logofooter" ng-click="getIndex('/')" src="images/ijlogo-white.svg" alt="insurejoy.com" width="" height="" /> -->
+    <h1 >My Company</h1>
+    <!-- <p>4th Floor, N Heights Building, Plot No 12, Software Unit Layout, Madhapur, Hyderabad, Telangana - 500081, India</p>
+    <p>
+    Licensed by - IRDA/DB838/20 (License category- Direct Broker (Life & General))
+    </p>
+    <p>
+    
+    </p> -->
+    <p><span> CIN:</span>17000 305 4688 </p>
+    <p>For Complaints and Grievances, Please write at
+    <a style=" text-decoration: underline; " target="_blank " href="#"><span class="__cf_email__">Shivamahale23@gmail.com</span></a>
+    </p>
+    <h4>We'd love to hear from you</h4>
+    </div>
+    <div class="contactarea">
+    <div class=" contbox">
+    <a ng-click="footer( 'Email') " href="#">
+    <svg class="animated " role="img" aria-label="help">
+    <use xlink:href="images/sprite.svg#email"></use>
+    </svg>
+    <span><span class="__cf_email__" data-cfemail="">Shivamahale23@gmail.com</span></span>
+    </a>
+    </div>
+    <div ng-click="footer( 'Mobile') " class="contbox " tabindex="0 ">
+    <svg class=" animated " role="img" aria-label="call">
+    <use xlink:href="images/sprite.svg#call"></use>
+    </svg>
+    <span>1700 409 0966</span>
+    </div>
+    <div class="contbox">
+    <a href="https://www.facebook.com" target="_blank " ng-click="footer( 'Facebook') ">
+    <svg class="animated " role="img" aria-label="Facebook">
+    <use xlink:href="images/sprite.svg#facebook"></use>
+     </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " role="img" aria-label="Twitter">
+    <svg class=" animated ">
+    <use xlink:href="images/sprite.svg#twitter"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') ">
+    <svg class=" animated " role="img" aria-label="Linkedin">
+    <use xlink:href="images/sprite.svg#linkedin"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " style="visibility: visible; ">
+    <svg class="animated " role="img" aria-label="youtube">
+    <use xlink:href="images/sprite.svg#youtube"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="pinterest">
+    <use xlink:href="images/sprite.svg#pinterest"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="instagram">
+    <use xlink:href="images/sprite.svg#instagram"></use>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div class="mainlinkarea">
+    <div class="linkbox ">
+    <h5 class="heading5 ">Company</h5>
+    <ul>
+    <li>
+    <a href="index.html" ng-click="footer( 'Home') ">Home</a>
+    </li>
+    <li>
+    <a href="about.html" ng-click="footer( 'About Us') ">About Us</a>
+    </li>
+    <li>
+    <a href="careers.html" ng-click="footer( 'Careers') ">Careers</a>
+    </li>
+    <li>
+    <a href="contact.html" ng-click="footer( 'Contact Us') ">Contact Us</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox ">
+    <h5 class="heading5 ">Library</h5>
+    <ul>
+    <li>
+    <a href="https://blog.insurejoy.com/" ng-click="footer( 'Insurance Knowledge') ">Insurance Blog</a>
+    </li>
+    <li>
+    <a href="partners.html" ng-click="footer( 'Insurance Companies') ">Our Partners</a>
+    </li>
+    <li>
+    <a href="frequently-asked-questions.html" ng-click="footer( 'FAQs') ">FAQs</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 " ng-click="openLife();footer( 'Life') ">Life Insurance</h5>
+    <ul>
+    <li>
+    <a href="term-insurance.html" ng-click="footer( 'Term') ">Term</a>
+    </li>
+    <li>
+    <a href="child-plans.html" ng-click="footer( 'Child') ">Child</a>
+    </li>
+    <li>
+    <a href="investment-plans.html" ng-click="footer( 'Investment') ">Investment</a>
+    </li>
+    <li>
+    <a href="pension-plans.html" ng-click="footer( 'Pension') ">Pension</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 ">General Insurance</h5>
+    <ul>
+    <li>
+    <a href="car-insurance.html" ng-click="footer( 'Car Insurance') ">Car Insurance</a>
+    </li>
+    <li>
+    <a href="bike-insurance.html" ng-click="footer( 'Bike Insurance') ">Bike Insurance</a>
+    </li>
+    <li>
+    <a href="health-insurance.html" ng-click="footer( 'Health Insurance') ">Health Insurance</a>
+    </li>
+    <li>
+    <a href="critical-illness-insurance.html" ng-click="footer( 'Critical Illness') ">Critical Illness</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="linkarea">
+    
+    <a href="grievance-redressal.html">Grievance Redressal</a>
+    <a href="terms-and-conditions.html" ng-click="footer( 'Terms &amp; Conditions') ">Terms &amp;
+    Conditions</a>
+    <a href="privacy-policy.html" ng-click="footer( 'Privacy Policy') ">Privacy Policy</a>
+    <a href="legal.html" ng-click="footer( 'Legal') ">Legal</a>
+    </div>
+    <!-- <div class="payoptionarea ">
+    <span>Payment Methods</span>
+    <svg>
+    <use xlink:href="images/sprite.svg#paymentops"></use>
+    </svg>
+    </div>
+    <div class="disclaimersarea">
+    <p>
+    <span> DISCLAIMER:</span> <span>
+    Kindly note that insurejoy.com can share the particulars of clients/visitors with the insurers for the purpose of soliciting
+    insurance policies. Insurance is the subject matter of Solicitation. For more details on risk factors, terms and conditions please read
+    sales brochure carefully before concluding a sale. Tax benefits are subject to changes in taxation laws. Terms and Conditions shall apply
+    for standard insurance plans. Product Information is authentic and solely based on the information received from the insurer
+    </span>
+    </p> -->
+    <span>
+    Copyright 2022 MyCompany.com. All Rights Reserved.
+    </span>
+    </div>
+    </div>
+    </div>
+    </footer></div>
+<link href="sass/animate.min.css" rel="stylesheet" type="text/css" />
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/jquery.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/bootstrap.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/angular.min.js"></script>
+<script src="internaljs/common/Controller/app-faq.js" type="1721414db8c3a0c0b851f62f-text/javascript"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/angular-sanitize.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/angular-animate.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/angular-aria.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/angular-messages.min.js"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript" src="internaljs/script/wow.min.js"></script>
+<script src="internaljs/common/Factory/FaqFactory.js" type="1721414db8c3a0c0b851f62f-text/javascript"></script>
+<script type="1721414db8c3a0c0b851f62f-text/javascript">
+        new WOW().init();
+    </script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1721414db8c3a0c0b851f62f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742554900c054cdd","token":"21d39aec2919455496f3629a9add23fe","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</body>
+
+</html>

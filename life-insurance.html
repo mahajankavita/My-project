@@ -1,0 +1,932 @@
+﻿<!DOCTYPE HTML>
+<html xmlns ng-cloak ng-app="App" ng-controller="MainController" ng-init="init();$root.scrollhide='bodymain';showmainloader=true;" ng-class="$root.scrollhide" lang="en" xml:lang="en">
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<head>
+
+<script type="80bdba7418f321d17e500fe2-text/javascript">
+(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WJXJGK2');
+    </script>
+
+<meta charset="UTF-8">
+<title>Life Insurance</title>
+<meta name="description" content="Life Insurance Plans comes with many benefits & features, know everything about life insurance & buy online. Compare Life Insurance, premiums & quotes, benefits, features, renewal and claim process." />
+<meta name="google-site-verification" content="AedqS0tmPdIS2jVwMZOOrkYdLud96VzRfJF9vKXqVpI" />
+<meta name="msvalidate.01" content="9F2ADB79BCFC18302DABF82FCB808826" />
+<link rel="shortcut icon" href="images/insurejoy-favicon.png" type="image/png" />
+<link href="sass/productsass.css" rel="stylesheet" type="text/css" />
+<style>
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+<noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJXJGK2"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden">
+<symbol viewBox="0 0 451.846 451.847" id="arrowright">
+<path d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"></path>
+</symbol>
+<symbol viewBox="0 0 451.847 451.847" id="arrowd">
+<path fill=" #f58634x" d="M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z"></path>
+</symbol>
+</svg>
+<header ng-class="$root.showHeaderClass">
+
+<nav class="navproduct">
+
+<div class="leftarea">
+<svg class="hamburger" onclick="if (!window.__cfRLUnblockHandlers) return false; openNav()" data-cf-modified-80bdba7418f321d17e500fe2-="">
+<use xlink:href="images/sprite.svg#hamburger"></use>
+</svg>
+<!-- <svg class="logo" style="position: relative; z-index: 0;" ng-click="getIndex('/')">
+<use xlink:href="images/sprite.svg#ijlogo-blue"></use> -->
+<h1>MY COMPANY</h1>
+</svg>
+</div>
+<div class="rightarea">
+<ul ng-if="device == 'Desktop'">
+    <li><a class="dropbtn" href="index.html" ng-click="header('Home')">Home</a></li>
+        <li><a class="dropbtn" href="about.html" ng-click="header('About Us')">About</a></li>
+<li>
+<div class="dropdown">
+<a class="dropbtn" ng-click="openLife();">
+Life
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+<a class="limr1" href="term-insurance.html" ng-click="header('Term')">Term</a>
+<a class="limr1" href="child-plans.html" ng-click="header('Child')">Child</a>
+<a class="limr1" href="investment-plans.html" ng-click="header('Investment')">Investment</a>
+<a class="limr1" href="pension-plans.html" ng-click="header('Pension')">Pension</a>
+</div>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a class="dropbtn">
+Health
+<svg>
+<use xlink:href="images/sprite.svg#arrowd"></use>
+</svg>
+</a>
+<div class="dropdown-content">
+<a class="limr1" href="health-insurance.html" ng-click="header('Health')">Health</a>
+<a class="limr1" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness</a>
+</div>
+</div>
+</li>
+<li><a class="dropbtn" href="car-insurance.html" ng-click="header('Car')">Car</a></li>
+<li><a class="dropbtn" href="bike-insurance.html" ng-click="header('Bike')">Bike</a></li>
+<li class="mobnumber">Service : <span>1800 309 5566</span></li>
+</ul>
+</div>
+</nav>
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="if (!window.__cfRLUnblockHandlers) return false; closeNav()" data-cf-modified-80bdba7418f321d17e500fe2-="">&times;</a>
+<div class="overlay-content">
+<a class="" href="about.html" ng-click="header('About Us')">About Us</a>
+<a class="" href="term-insurance.html" ng-click="header('Term')">Term Insurance</a>
+<a class="" href="child-plans.html" ng-click="header('Child')">Child Plans</a>
+<a class="" href="investment-plans.html" ng-click="header('Investment')">Investment Plans</a>
+<a class="" href="pension-plans.html" ng-click="header('Pension')">Pension Plans</a>
+<a class="" href="health-insurance.html" ng-click="header('Health')">Health Insurance</a>
+<a class="" href="critical-illness-insurance.html" ng-click="header('Critical Illness')">Critical Illness Cover</a>
+<a class="" href="car-insurance.html" ng-click="header('Car')">Car Insurance</a><
+<a class="" href="bike-insurance.html" ng-click="header('Bike')">Bike Insurance</a>
+<a href="contact.html">Contact Us</a>
+<a> <span class="cnstyle">Service : <span>1800 309 5566</span></span></a>
+</div>
+</div>
+</header>
+<main>
+<section class="productbanner">
+<div class="container">
+<h1><span> Life Insurance</span></h1>
+<h5> <span>Give Financial Backup To Your Family with</span> Life Insurance, which comes to your rescue when it’s about providing financial back up to your family when you are not there</h5>
+<div class="formapararea">
+<div class="pointers leftprt" style="visibility: visible; animation-name: fadeInRight;">
+<div class="pointstyle">
+<svg>
+<use xlink:href="images/sprite.svg#covid"></use>
+</svg>
+<p class="txt">Covid-19 Covered</p>
+</div>
+<div class="pointstyle"></div>
+<div class="pointstyle">
+<svg>
+<use xlink:href="images/sprite.svg#support"></use>
+</svg>
+<p class="txt">Guaranteed Claims Assistance </p>
+</div>
+</div>
+<div class="productpagebox">
+<div class="col-md-12 col-sm-12 col-xs-12 elementcontainer nopad " ng-cloak ng-show="termpopup">
+<p class="felement text-center mb-2"> Get <span>Live Quotes</span> From Top Insurance Companies</p>
+<div class="helement1 mt-2 mb-2">
+<div class="inputcontainer flcenter-sb">
+<div class="halflbl">Gender</div>
+<div class="restlbl">
+<a data-ng-class="maleclass" data-ng-click="checkgender(0)">Male</a>
+<a data-ng-class="femaleclass" data-ng-click="checkgender(1)">Female</a>
+</div>
+</div>
+</div>
+<div class="helement1 mt-2 mb-2">
+<div class="inputcontainer flcenter-sb">
+<div class="halflbl"> Tobacco User</div>
+<div class="restlbl">
+<a data-ng-class="smokeclass" data-ng-click="checksmoker(1)">Yes</a>
+<a data-ng-class="nosmokeclass" data-ng-click="checksmoker(0)">No</a>
+</div>
+</div>
+</div>
+<div class="helement mt-2 mb-2 mbar">
+<h6 class="col-md-12 popuph"> Type/Select Annual Income </h6>
+<div class="inputcontainer mobinput">
+<label></label>
+<input type="tel" autocomplete="off" placeholder="Please type & choose annual income" ng-model="selectedtermincomepop" class="inputarea" ng-focus="closemblpop(2,6)" ng-click="closemblpop(2,6)" />
+<span ng-show="annualerror" ng-cloak class=" errorclass erposr">Select annual income from list</span>
+</div>
+</div>
+<div class="helement mt-2 mb-2 desbar">
+<h6> Annual Income </h6>
+<div class="fincom">
+<span ng-show="dotmessage" ng-cloak class="red small-text">* </span>
+<span ng-bind="usertextincome"></span>
+</div>
+<div class="inputcontainer">
+<input id="userincome" class="inputarea" type="text" autocomplete="off" ng-model="incomeItem" required="" ng-click="clickItem(1,'income')" ng-keyup="clickItem(1,'income')">
+<label for="userincome">Type and select income</label>
+<ul class="dd-content" off-click="returnItem(result,'income')" off-click-activator="showIncomeList" ng-cloak ng-show="showIncomeList">
+<li ng-repeat="item in userActualIncome | startsWithLetter:incomeItem as result" ng-click="clickItem(item,'income')">
+{{item.text}}
+</li>
+<li ng-show="result.length==0 && userActualIncome.length>0" ng-repeat-empty>Items not found...</li>
+<li ng-show="userActualIncome.length==0" ng-repeat-empty>Loading now....</li>
+</ul>
+<span ng-show="annualerror" ng-cloak class="errorclass erposr">Type and select a value from list </span>
+</div>
+</div>
+<div class="helement mt-2 mb-2">
+<h6> With date of birth </h6>
+<div class="inputcontainer flcenter-sb">
+<input id="Tel13" numbers-only type="tel" autocomplete="off" class="dtinput " ng-model="IGdate" focus-me="dd1" maxlength="2" placeholder="DD" ng-blur="testdate(1,1)" ng-keyup="IGdateKey(1,$event)">
+<input id="Tel14" numbers-only type="tel" autocomplete="off" ng-model="IGmonth" class="dtinput " focus-me="dd2" maxlength="2" placeholder="MM" ng-blur="testdate(2,1)" ng-keyup="IGdateKey(2,$event)">
+<input id="Tel15" numbers-only type="tel" autocomplete="off" class="yearinput " ng-model="IGyear" focus-me="dd3" maxlength="4" placeholder="YYYY" ng-blur="testdate(3,1)" ng-keyup="IGdateKey(3,$event)" />
+<span ng-if="dateerror" class="errorclass erposr">Enter Correct Age(Min 18 yrs or Max 65 yrs)</span>
+</div>
+</div>
+<div class="helement mt-2 mb-2 mbar">
+<h6> Type/Select City </h6>
+<div class="inputcontainer mobinput">
+<label></label>
+<input type="text" autocomplete="off" placeholder="Please type and choose the city" required="" ng-model="selectedcitynampop" class="inputarea" ng-focus="closemblpop(2,1)" ng-click="closemblpop(2,1)" />
+<span ng-show="cityerror" ng-cloak class="errorclass erposr">Select a city from list</span>
+</div>
+</div>
+<div class="helement mt-2 mb-2 desbar">
+<h6> Living in </h6>
+<div class="inputcontainer">
+<input id="usercity" class="inputarea" type="text" autocomplete="off" autocomplete="off" required="" ng-model="cityItem" ng-click="clickItem(1,'city')" ng-keyup="clickItem(1,'city')">
+<label for="usercity">Type and select city</label>
+<ul class="dd-content" off-click="returnItem(result,'city')" off-click-activator="showCityList" ng-cloak ng-show="showCityList">
+<li ng-repeat="item in commoncitystate | startsWithLetter1:cityItem as result" ng-click="clickItem(item,'city')" ng-enter="clickItem(item,'city')">
+{{item.cityname}}
+</li>
+<li ng-cloak ng-show="result.length==0 && commoncitystate.length>0" ng-repeat-empty>Items not found...</li>
+<li ng-show="commoncitystate.length==0" ng-repeat-empty>Data Loading...</li>
+</ul>
+<span ng-show="cityerror" ng-cloak class="errorclass erposr">Type and select a value from list</span>
+</div>
+</div>
+<div class="helement mt-2 mb-2 text-center">
+<h6> Mobile No. </h6>
+<div class="inputcontainer ">
+<input id="usermob" type="tel" autocomplete="off" numbers-only maxlength="10" required="" ng-model="userMobile" ng-blur="checkmoberror(userMobile)" class="inputarea" aria-invalid="false" />
+<label for="usermob">Enter Mobile No.</label>
+<span ng-show="mobileerror" class="errorclass erposr ">Please enter valid mobile no.</span>
+<span ng-cloak ng-show="wrongMobile" class="errorclass erposr " ng-bind="wrongMobilemsg"> </span>
+<span ng-cloak class="red small-text " ng-bind="leadCreationExceedMsg"></span>
+</div>
+</div>
+<div class="felement text-center mt-3 mb-2 ">
+<button data-ng-click="submitted=true;gettermquotes()" class="getquotesbt" type="button">
+<span ng-show="!showbtntermloader" ng-disabled="showbtntermloader"> Get Live Quotes</span>
+<div class="spinnerw" ng-cloak ng-show="showbtntermloader">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+<div class="felement text-center ">
+<span class="consentms">We respect your privacy & hate spam calls as much as you do. We will communicate only to help in choosing the right insurance policy.</span>
+</div>
+</div>
+<div ng-cloak ng-show="showotpbox" class="col-md-12 col-sm-12 col-xs-12  userloginarea ">
+<h2 class="">OTP</h2>
+<h5>
+Enter 4-digit code sent to <br />your mobile no. <span ng-bind="userMobile "> </span>
+<a ng-click="UpdateMobileNo()" class="updatenum " style="clear: both; ">Edit</a>
+</h5>
+<div class="felement text-center mt-3 mb-1 ">
+<div class="otparea formar ">
+<input type="tel" autocomplete="off" data-ng-model="userOTP0" ng-keyup="otpKey(0, $event)" focus-me="OTP0" value="" numbers-only maxlength="1" minlength="1" class="otpcontainer">
+<input type="tel" autocomplete="off" data-ng-model="userOTP1" ng-keyup="otpKey(1, $event)" focus-me="OTP1" value="" numbers-only maxlength="1" minlength="1" class="otpcontainer">
+<input type="tel" autocomplete="off" data-ng-model="userOTP2" ng-keyup="otpKey(2, $event)" focus-me="OTP2" value="" numbers-only maxlength="1" minlength="1" class="otpcontainer">
+<input type="tel" autocomplete="off" data-ng-model="userOTP3" ng-keyup="otpKey(3, $event)" focus-me="OTP3" value="" numbers-only maxlength="1" minlength="1" class="otpcontainer">
+</div>
+</div>
+<div class="felement text-center " style=" height:14px;">
+<label ng-show="wrongotpmsgshow" class="errorotp ng-binding">Please enter correct OTP</label>
+</div>
+<div class="felement text-center mt-3 mb-2 ">
+<div class="col-md-12 col-sm-12 col-xs-12 col-xxs-12  text-center mrgtbn">
+<button ng-cloak ng-show="showotpbox" data-ng-click="submitted=true;submitleadform(0,2)" class="getquotesbt " type="button">
+<span ng-show="!showbtnleadloader" ng-disabled="showbtnleadloader">Verify</span>
+<span class="spinnerw" ng-cloak ng-show="showbtnleadloader">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</button>
+</div>
+</div>
+<div class="felement text-center mt-2 mb-3 ">
+<div class="resarea">
+<span class="resendotpdis" ng-cloak ng-show="!(showotpbox && showResend)">
+Resend OTP <span ng-show="showotpbox && !showResend" class="timertext"> in <span ng-bind="resendtime"></span> sec.</span>
+</span>
+<span ng-click="otpFn(2)" class="resendotp" ng-cloak ng-show="showotpbox && showResend">Resend OTP</span>
+</div>
+</div>
+</div>
+<section class="mainpop mbar" ng-show="showcitypop" ng-class="$root.productpop" ng-cloak>
+<div class="fpop" ng-class="$root.productBox">
+<svg class="clico clico--close closebtnew" ng-click="closemblpop(1)">
+<use xlink:href="images/sprite.svg#cross"></use>
+</svg>
+<div class="felement" ng-show="termannualmblpop" ng-cloak>
+<div class="mobheadinput ">
+<input focus-me="myInputFocusTermIncome" type="text" autocomplete="off" ng-model="searchText02" class="newmobauto-pop" placeholder="Type/Select your annual income.." />
+</div>
+<ul class="openlist pttop50">
+<li ng-repeat="item in userActualIncome|startsWithLetter:searchText02 as result" ng-click="closemblpop(item,6)"> <a class="autocompst">{{item.text}}</a> </li>
+<li ng-cloak ng-show="result.length==0 && userActualIncome.length>0" ng-repeat-empty>Items not found...</li>
+<li ng-show="userActualIncome.length==0" ng-repeat-empty>Data Loading...</li>
+</ul>
+</div>
+<div class="felement" ng-show="citymblpop" ng-cloak>
+<div class="mobheadinput">
+<input focus-me="myInputFocus" type="text" autocomplete="off" ng-model="searchText03" class="newmobauto-pop " placeholder="Type/Select your city.." />
+</div>
+<ul class="openlist pttop50">
+<li ng-repeat="item in commoncitystate | startsWithLetter1:searchText03 as result" ng-click="closemblpop(item,1)"> <a class="autocompst">{{item.cityname}}</a> </li>
+<li ng-cloak ng-show="result.length==0 && commoncitystate.length>0" ng-repeat-empty>Items not found...</li>
+<li ng-show="commoncitystate.length==0" ng-repeat-empty>Data Loading...</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div class="pointers rightprt">
+<div class="pointstyle"></div>
+<div class="pointstyle">
+<svg>
+<use xlink:href="images/sprite.svg#tax"></use>
+</svg>
+<p class="txt">Save Tax Upto 70,000</p>
+</div>
+<div class="pointstyle"></div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</section>
+<div class="container  contentarea">
+<div class="leftcontent">
+<div class="breadcrumbarea">
+<a ng-click="getIndex('/')" href="#">
+<svg>
+<use xlink:href="Images/sprite-2.svg#home"></use>
+</svg>Home
+</a>
+<span>
+<svg>
+<use xlink:href="#arrowright"></use>
+</svg>
+Life Insurance
+</span>
+</div>
+<section>
+<h5 class=" sectiontitle ">Protect your family with </h5>
+<h2>
+Life Insurance Plans
+</h2>
+<div class="nopad-left ">
+<p>
+We have often heard the common saying that “Life is unpredictable” which implies that anything could happen in our life be it a “fortunate” or an “unfortunate” event. If its fortunate, life becomes even more happier and keeps going but the u-turn comes
+when it is an unfortunate event.
+</p>
+<p><b>Dreadful events or we may call the 3 D events such as</b> </p>
+<ul>
+<li> Death </li>
+<li> Disease </li>
+<li> Disability </li>
+</ul>
+</div>
+<p>
+could prove fatal and takes little time to turn the happy living upside down. Life could be devastated for our own self and/or for the people around us specially our family. The aftermaths of any unfortunate event could be more dreadful if the victim
+is partly or solely the financial contributor to the family.
+</p>
+<p>Of course, no one would have those six senses to predict to whom, when and how would such unfortunate event would occur. </p>
+<p><em>Here comes the concept of Life Insurance, which comes to your rescue when it’s about providing financial back up to your family or achieving your financial goals.</em></p>
+</section>
+<section>
+<h5 class="sectiontitle">Understanding the basics </h5>
+<h2>
+What is Life Insurance?
+</h2>
+<div class="elementcontainer1 ">
+<div class="helement">
+<p>
+Life insurance is a combination of two terms “LIFE” and “INSURANCE” which implies in case of “loss of life” of the person who is insured, a monetary compensation (which is pre-decided) will be payable to the family members by the
+<i><b>insurance company</i></b>
+which help them to lead an independent financial life. <br><br>On the other hand, if the earning member of the family does not die an untimely death, the money received from a life
+insurance policy could also help to attain various financial goals. Life insurance is thus a legal contract between the insurance company and the person who is taking insurance. Person who is insured pays a consideration
+as premium to get this life cover from the insurance company.
+</p>
+<h3>
+Life Insurance covers the risk of
+</h3>
+<ul>
+<li>“Dying too early” - leaving a dependent family to fend for itself.</li>
+<li>“Living too long” till old age - without visible means of support. </li>
+</ul>
+<p>It is important to have an understanding about the basic terminology used in Life Insurance domain to understand it better.</p>
+</div>
+<div class="helement">
+<img src="images/what-is-life-insurance-cercle.jpg" alt="Life Insurance Policy?" title="What is Life Insurance?" class="imgwidthf">
+
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle">Points to remember </h5>
+<h2>
+Important Life Insurance Terminology
+</h2>
+<div class="elementcontainer1">
+<div class="helement">
+<h4>Insured </h4>
+<p>Insured is a person whose “Loss of life” is being covered by the insurance company and on whose death the insurance company provides a financial amount to the family members. </p>
+</div>
+<div class="helement">
+<h4>Insurer </h4>
+<p> Insurer is another name for an insurance company. Insurance company is the business entity which is a registered organization to do the insurance business.</p>
+</div>
+<div class="helement">
+<h4>Sum Assured/ Life Cover </h4>
+<p> The financial amount which an insurance company pays to the family in case of insured events which are covered under a life insurance contract. </p>
+</div>
+<div class="helement">
+<h4>Policy Term </h4>
+<p> Policy term is the duration or specified number of years for which the insurance company covers the risk and the insurance contract is active.</p>
+</div>
+<div class="helement">
+<h4> Premium Payment Term </h4>
+<p>
+It is the duration or tenure till when the policyholder has to pay the premium for the insurance policy. The premium payment term could be equal to the policy term (contract term) or it could be less than that as well in some cases.
+ </p>
+</div>
+<div class="helement">
+<h4>Insured Events</h4>
+<p> The happenings or events which are covered under the insurance policy like death, maturity and in some policies, it could be disease and/or disability as well under some policies.</p>
+</div>
+<div class="helement">
+<h4> Claim </h4>
+<p> It is an insured event on whose occurrence, the life insurance company pays the policy money. </p>
+</div>
+<div class="helement">
+<h4>Maturity</h4>
+<p> When the policy term is completed, and the life insurance contract comes to an end.</p>
+</div>
+<div class="helement">
+<h4> Death </h4>
+<p> When the life insured under a life insurance contract dies during the policy term, the nominee is handed over the policy money. </p>
+</div>
+<div class="helement">
+<h4> Nominee </h4>
+<p> An individual (usually a family member) who is entitled to receive the financial compensation out of the insurance policy in the event of death of the insured person. </p>
+</div>
+<div class="helement">
+<h4> Premium </h4>
+<p> It is the cost of getting a life cover from the insurance company which is paid by the policyholder to the insurance company. </p>
+</div>
+<div class="felement">
+<h4>Policyholder </h4>
+<p> The individual who pays the premium for the insurance policy and who enters into a life insurance contract with the insurance company is policyholder. There could be 2 scenarios:</p>
+<ul>
+<li>If a policyholder has taken a life insurance policy on his own life and pays the premium, under this scenario, the policyholder and life insured are same.</li>
+<li>
+If a father has taken a life insurance policy on the life of his son, under this scenario, the father is termed as policyholder who pays the premium and the son is termed as Life insured whose life is being insured.
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle">Why you should buy </h5>
+<h2>
+A Life Insurance Policy?
+</h2>
+<p>The below stated reasons would undoubtedly establish the need for an adequate Life Insurance Policy.</p>
+<div class="elementcontainer1">
+<ol class="col-md-8">
+<li>
+<h4> To provide Financial security to your family </h4>
+<p>
+It is vital that you offer your loved ones financial security apart from liking them unconditionally. Life insurance is that crucial financial tool which will support your family to lead their life without any monetary constraints in case of an untimely
+death of the earning member. The bottom line is if you have dependents you must have a life insurance policy.
+</p>
+</li>
+<li>
+<h4> To accomplish your Financial Goals </h4>
+<p>
+Life insurance policy will enable you to infer regular saving habit in the form of periodic premium payments. With life insurance plans offering a guaranteed sum of money along with bonuses will allow you to accumulate a substantial amount for the completion
+of financial goals like child’s education, marriage, buying a house, planning for retirement, etc. There are life insurance plans which offer twin benefits of life cover and wealth creation under the same umbrella
+plan. One can reap the benefits of investing in the market and enjoy the benefits of market-linked return on invested for wealth creation.
+</p>
+</li>
+<li>
+<h4> To have a regular source of Income </h4>
+<p> When it comes to retirement planning, life insurance is one of the best instruments that offer regular pay-outs in the form of annuities. Thus, it will act as a source of pension when you retire. </p>
+</li>
+<li>
+<h4> To avail Tax Benefit </h4>
+<p>
+Life insurance policy allows you to enjoy <b><i>tax benefits</i></b> for the premium paid under section 80 C of Income Tax Act,1961
+up to the sum of Rs 1.5 Lakhs. The maturity proceeds are also tax-free for the provisions stated therein the act.
+</p>
+</li>
+</ol>
+<div class="col-md-4">
+<img src="images/why-insurance.jpg" alt="Benefits of Life Insurance" title="Benefits of Life Insurance">
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle">How it works? </h5>
+<h2>
+Understanding the Working of Life Insurance Plan
+</h2>
+<p> Life Insurance plan is a legal contract for a specified number of years between: </p>
+<ul>
+<li>A person whose life is being insured (Life Insured) and A company who insures his/her Life (Insurer)</li>
+<li> Person Insured pays a periodic pay out (annually/semi-annually/quarterly/monthly) in the form of a premium.</li>
+<li> In return one gets a life cover (sum assured) which is payable to the nominee on the death of the person who is insured, and the policy comes to an end.</li>
+<li> If the insured is alive till the end of the policy term, the sum assured is payable on maturity when the policy term is completed based on type of a Life Insurance product.</li>
+</ul>
+<div class="elementcontainer1">
+<div class="helement">
+<h3>Case-1</h3>
+<img src="images/case1.jpg" class="imgwidthf" alt="types of life insurance" title="Life Insurance plan">
+</div>
+<div class="helement">
+<h3>Case-2</h3>
+<img src="images/case2.jpg" class="imgwidthf" alt="life cover plan" title="gets a life cover">
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle">Which events are covered </h5>
+<h2>Under a Life Insurance Policy? </h2>
+<p> There are events or occurrences which are called “Insured Events” which are: </p>
+<ul>
+<li>
+<h3> Death – </h3>
+<p>
+<strong>When the Life Insured dies during the Policy Term</strong>
+Life insurance primarily covers the “loss of life” or death. So, in the event of death of the life insured with in the policy term, the nominee would be given financial compensation which is the sum assured/life cover amount.
+</p>
+</li>
+<li>
+<h3> Maturity – </h3>
+<p>
+<Strong> When the Life Insured lives till the end of the policy term</Strong>
+What will happen, when the life insured does not die during the policy term and the insurance policy comes to an end? It is known as the event of “maturity” of the insurance policy. There are various types of life insurance policies which pays the entire
+sum assured to the policyholder when the life insurance policy matures.
+</p>
+</li>
+<li>
+<h3>Accident/Disease/Disability – </h3>
+<p>
+<Strong>
+When the Life Insured meets with any of these unfortunate events during the Policy Term
+</Strong>
+There are additional benefits/add- ons or Riders which could be added to your main/base life insurance policy on payment of nominal extra premium to cover the events of disease/disability for a specific sum of money known as rider sum assured which is
+different from base insurance policy sum assured.
+</p>
+</li>
+</section>
+<section>
+<h5 class="sectiontitle">How many types of</h5>
+<h2>
+Life Insurance Plans are there?
+</h2>
+<p><strong>There are 3 broad types of Life Insurance Plans which are based on framework and the benefits offered therein.</strong> </p>
+<div class="elementcontainer1">
+<div class="featureblock">
+<div class="reasonst num">1</div>
+<div class="featurest">
+<h4>Term Plans </h4>
+<p>
+Term Insurance plan is a pure protection insurance plan where the insurance company covers you with a sum assured against your premature or untimely death within the contract period. The benefits out of a term insurance plan are handed over to your nominees. There is no element of investment or saving in a pure term plan that’s
+why there are no maturity benefits if you survive the policy term.
+</p>
+<p>This plan is the cheapest form of life insurance as it is the most affordable form of life insurance. The plan could be purchased <strong>online or offline</strong>.</p>
+</div>
+</div>
+<div class="featureblock">
+<div class="reasonst num">2</div>
+<div class="featurest">
+<h4> Endowment Plans </h4>
+<p>
+Endowment plans are protection cum saving plans (also known as traditional plans) which help you to save regularly
+in the form of a premium for creation of a corpus. Such plans help you to achieve your mid-term and long-term financial goals along with protecting you against any unfortunate events like death. Endowment plans offer
+life cover in case the person insured dies during the policy term. But if the person insured lives throughout the policy term, then on maturity the policyholder gets a guaranteed sum. Endowment plans could be <strong>participatory</strong> (where policyholder gets their share of bonus during the policy term) <strong>or non-participatory</strong> (where bonus is not allocated) <strong>plans</strong>.
+</p>
+</div>
+</div>
+<div class="featureblock">
+<div class="reasonst num">3</div>
+<div class="featurest">
+<h4> Unit Linked Investment Plans (ULIPs) </h4>
+<p>
+Unit linked Insurance plans are protection cum market linked investment plans. Such plans are taken for
+wealth creation as the policyholder gets the opportunity to reap market linked benefits. Units are allotted to the policyholders and one can choose to invest in the funds investing in govt. securities, debts or equities
+as per the risk bearing capacity. The money invested grows and allow the policyholder to enhance his invested amount due to market linked returns in the form of a fund value payable at maturity.
+</p>
+<p>ULIPs also cover you for an unfortunate death during the policy term and hands over the claim pay out to the nominees. </p>
+</div>
+</div>
+<div class="felement mb-2 mt-2">
+<p><strong>Life insurance plans are often goal driven, based on various LIFE GOALS and SPECIAL FEATURES inherited in it, following are the types of Life insurance plans:</strong></p>
+</div>
+<div class="featureblock">
+<div class="reasonst num">1</div>
+<div class="featurest">
+<h4>Child Plans</h4>
+<p>
+Child plans are designed with a sole purpose to provide continuous financial back up to the child in case something unfortunate happens
+to the parent. The child plan helps to save and secure the dreams and aspirations of the child by offering a robust sum to take care of different milestones in a child’s life. The main feature of a child plan is the
+“inbuilt waiver of premium” benefit which ensures that the policy continues in case the parent paying the premium dies during the policy term. Child plans comes as traditional endowment plans and unit linked insurance
+plans (ULIP) too based on the risk appetite of the policyholder.
+</p>
+</div>
+</div>
+<div class="featureblock">
+<div class="reasonst num">2</div>
+<div class="featurest">
+<h4>Money Back Plans </h4>
+<p>
+Money back plans as the name suggests is a traditional life insurance plan which helps the policyholder to
+get periodic payments as “money backs” i.e some portion or percentage of the sum assured is returned to the policyholder during the policy term instead the entire sum assured being given at maturity. It helps the policyholder
+to get some money out of his/her insurance policy to meet various financial needs.
+</p>
+<p>
+There could be 3-4 money backs in the policy depending upon the policy terms and conditions. If before starting the money backs, the life insured dies, the entire sum assured is given to the nominee and the policy ends. If the life insured dies after
+getting money backs, the money back amount is not deducted from the death sum assured and the entire sum assured is payable to the nominee.
+</p>
+</div>
+</div>
+<div class="featureblock">
+<div class="reasonst num">3</div>
+<div class="featurest">
+<h4> Pension Plans </h4>
+<p>
+Pension plans help the person to accumulate funds for the retirement. One has to pay premium during his or her earning phase of
+life to the insurance company. Insurance company offers the person an enhancement of his/her money so that once the person retires, he or she could start getting pension amount as per his chosen option.
+</p>
+<p>
+The policyholder could decide for how many years he/she has to pay the premium amount and from which age he/she wants to have the pension started. Death is also covered during the policy term and the death cover will be given to the nominee. Once the
+insured starts receiving pension, in case of his/her death the nominee could continue to receive the pension as per policy conditions.
+</p>
+<p>Pension plans comes as traditional endowment plans as well as unit linked insurance plans (ULIP) too based on the risk appetite of the policyholder. </p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle">How much do i need? </h5>
+<h2>
+How much Life Insurance should I Buy?
+</h2>
+<p>The sum assured, or life cover should be an amount which, if invested, should fetch a regular income for your dependants in such a way that they are able to maintain a lifestyle which they are used to.</p>
+<p><strong>Life Insurance cover depends upon Human Life Value concept which depends upon important parameters like:</strong></p>
+<ul>
+<li> Your Income and no. of dependants</li>
+<li> Your family’s current financial expenses </li>
+<li> Financial goals like kid’s education, marriage </li>
+<li> Your current assets </li>
+<li> Your current Liabilities like home loan, car loan, etc. </li>
+<li> Inflation </li>
+</ul>
+<p>However, there are thumb rules which says minimum life insurance cover should be 10-12 times of your annual income. There are Life Insurance Calculators as well which could help you to assess your life insurance requirement.</p>
+</section>
+<section>
+<h5 class="sectiontitle">factors affecting your </h5>
+<h2>
+Premium Calculation?
+</h2>
+<p>Life Insurance premium is calculated based on the following factors:</p>
+<div class="elementcontainer1 ">
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Age </h3>
+<p>
+Age is the vital factor which is considered while calculating a life insurance premium. The younger you are, lower is your life insurance premium because there are less chances of life threatening disease or death to a younger individual as compared to
+older ones.
+</p>
+</div>
+</div>
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Gender </h3>
+<p>
+Life insurance companies are gender biased as far as premiums are concerned. As per statistics, the life expectancy of females is higher than males implying females tend to live longer than males. The life insurance company charges lesser premium from
+females as compared to males of same age. The risk in insuring a female is therefore lesser for an insurance company.
+</p>
+</div>
+</div>
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Family Medical History </h3>
+<p> If there is a family medical history like of heart attack, cancer, etc. it could lead to a higher premium as there is a possibility that hereditary disease could pass on to next generations. </p>
+</div>
+</div>
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Personal Health Condition </h3>
+<p> Current and past medical health condition is important to assess for granting insurance. The healthier life will be charged premium at par whereas the less healthy life will have to pay higher premiums. </p>
+</div>
+</div>
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Occupation </h3>
+<p>
+The occupation is also a determinant which affects premium. People involved in occupations which could be risky or poses health hazard like working in the mining industry, oil and gas, fisheries, etc. tend to have a higher insurance premium due to the
+risk involved in their profession as compared to people with non-risky occupations like desk job.
+</p>
+</div>
+</div>
+<div class="help-box helement">
+<div class="benefits-icon"> <i class="fa fa-leaf help-icon"><img src="images/home_images/09_pointer.svg" width="28" height="29" alt=""></i> </div>
+<div class="benefits-content text-left">
+<h3 class="h3marg"> Tobacco/Alcohol Intake </h3>
+<p>
+Given their lifestyle and unhealthy habits, the smokers are considered to be extremely risky customers and sometimes have to pay twice the premium as compared to a non-smoker. Also, Consumption of alcohol as a habit is considered to be a risky behaviour
+by insurance companies. If one is a heavy drinker, it can lead to a substantial increase in premium.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h5 class="sectiontitle"> What is not covered </h5>
+<h2> Exclusions in Life insurance Policy? </h2>
+<p>Death due to following reasons is excluded from the policy terms & conditions:.</p>
+<ul>
+<li>
+Death due to Suicide or any kind of self-inflicted injury occurred with in one year of policy issuance is not paid for by the <b><i>insurance company</i></b>.
+Some companies pay back some percentage of premium paid till that period where as some decline the claim with no pay out
+</li>
+<li> Death due to consumption of alcohol or under the influence of drugs </li>
+<li> Death occurred in the event of war and riots </li>
+<li> Death due to involvement in adventurous activities like car racing, paragliding, rock climbing, etc. </li>
+<li> Death due to involvement in activities which are criminal or illegal in nature </li>
+</ul>
+</section>
+</div>
+<div class="rightcontent">
+<h4>Compare Insurance Plans</h4>
+<div class="border-rw"></div>
+<ul>
+<li><a href="life-insurance.html">Life Insurance</a></li>
+<li><a href="term-insurance.html">Term Insurance</a></li>
+<li><a href="critical-illness-insurance.html">Critical Illness Insurance</a></li>
+<li><a href="health-insurance.html">Health Insurance</a>
+<li> <a href="car-insurance.html">Car Insurance</a></li>
+<li> <a href="bike-insurance.html">Bike Insurance</a></li>
+<li><a href="child-plans.html">Child Plan</a></li>
+<li><a href="investment-plans.html">Investment plan</a></li>
+<li><a href="pension-plans.html">Pension plan</a></li>
+</ul>
+</div>
+</div>
+</main>
+
+<footer class="purple section ">
+    <div class="footerarea ">
+    <div class="container ">
+    <div class="companyintro">
+    <!-- <img class="logofooter" ng-click="getIndex('/')" src="images/ijlogo-white.svg" alt="insurejoy.com" width="" height="" /> -->
+    <h1 >My Company</h1>
+    <!-- <p>4th Floor, N Heights Building, Plot No 12, Software Unit Layout, Madhapur, Hyderabad, Telangana - 500081, India</p>
+    <p>
+    Licensed by - IRDA/DB838/20 (License category- Direct Broker (Life & General))
+    </p>
+    <p>
+    
+    </p> -->
+    <p><span> CIN:</span>17000 305 4688 </p>
+    <p>For Complaints and Grievances, Please write at
+    <a style=" text-decoration: underline; " target="_blank " href="#"><span class="__cf_email__">Shivamahale23@gmail.com</span></a>
+    </p>
+    <h4>We'd love to hear from you</h4>
+    </div>
+    <div class="contactarea">
+    <div class=" contbox">
+    <a ng-click="footer( 'Email') " href="#">
+    <svg class="animated " role="img" aria-label="help">
+    <use xlink:href="images/sprite.svg#email"></use>
+    </svg>
+    <span><span class="__cf_email__" data-cfemail="">Shivamahale23@gmail.com</span></span>
+    </a>
+    </div>
+    <div ng-click="footer( 'Mobile') " class="contbox " tabindex="0 ">
+    <svg class=" animated " role="img" aria-label="call">
+    <use xlink:href="images/sprite.svg#call"></use>
+    </svg>
+    <span>1700 409 0966</span>
+    </div>
+    <div class="contbox">
+    <a href="https://www.facebook.com" target="_blank " ng-click="footer( 'Facebook') ">
+    <svg class="animated " role="img" aria-label="Facebook">
+    <use xlink:href="images/sprite.svg#facebook"></use>
+     </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " role="img" aria-label="Twitter">
+    <svg class=" animated ">
+    <use xlink:href="images/sprite.svg#twitter"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') ">
+    <svg class=" animated " role="img" aria-label="Linkedin">
+    <use xlink:href="images/sprite.svg#linkedin"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Twitter') " style="visibility: visible; ">
+    <svg class="animated " role="img" aria-label="youtube">
+    <use xlink:href="images/sprite.svg#youtube"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="pinterest">
+    <use xlink:href="images/sprite.svg#pinterest"></use>
+    </svg>
+    </a>
+    <a href="#" target="_blank " ng-click="footer( 'Linkedin') " style="visibility: visible; ">
+    <svg class=" animated" role="img" aria-label="instagram">
+    <use xlink:href="images/sprite.svg#instagram"></use>
+    </svg>
+    </a>
+    </div>
+    </div>
+    <div class="mainlinkarea">
+    <div class="linkbox ">
+    <h5 class="heading5 ">Company</h5>
+    <ul>
+    <li>
+    <a href="index.html" ng-click="footer( 'Home') ">Home</a>
+    </li>
+    <li>
+    <a href="about.html" ng-click="footer( 'About Us') ">About Us</a>
+    </li>
+    <li>
+    <a href="careers.html" ng-click="footer( 'Careers') ">Careers</a>
+    </li>
+    <li>
+    <a href="contact.html" ng-click="footer( 'Contact Us') ">Contact Us</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox ">
+    <h5 class="heading5 ">Library</h5>
+    <ul>
+    <li>
+    <a href="https://blog.insurejoy.com/" ng-click="footer( 'Insurance Knowledge') ">Insurance Blog</a>
+    </li>
+    <li>
+    <a href="partners.html" ng-click="footer( 'Insurance Companies') ">Our Partners</a>
+    </li>
+    <li>
+    <a href="frequently-asked-questions.html" ng-click="footer( 'FAQs') ">FAQs</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 " ng-click="openLife();footer( 'Life') ">Life Insurance</h5>
+    <ul>
+    <li>
+    <a href="term-insurance.html" ng-click="footer( 'Term') ">Term</a>
+    </li>
+    <li>
+    <a href="child-plans.html" ng-click="footer( 'Child') ">Child</a>
+    </li>
+    <li>
+    <a href="investment-plans.html" ng-click="footer( 'Investment') ">Investment</a>
+    </li>
+    <li>
+    <a href="pension-plans.html" ng-click="footer( 'Pension') ">Pension</a>
+    </li>
+    </ul>
+    </div>
+    <div class="linkbox">
+    <h5 class="heading5 ">General Insurance</h5>
+    <ul>
+    <li>
+    <a href="car-insurance.html" ng-click="footer( 'Car Insurance') ">Car Insurance</a>
+    </li>
+    <li>
+    <a href="bike-insurance.html" ng-click="footer( 'Bike Insurance') ">Bike Insurance</a>
+    </li>
+    <li>
+    <a href="health-insurance.html" ng-click="footer( 'Health Insurance') ">Health Insurance</a>
+    </li>
+    <li>
+    <a href="critical-illness-insurance.html" ng-click="footer( 'Critical Illness') ">Critical Illness</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="linkarea">
+    
+    <a href="grievance-redressal.html">Grievance Redressal</a>
+    <a href="terms-and-conditions.html" ng-click="footer( 'Terms &amp; Conditions') ">Terms &amp;
+    Conditions</a>
+    <a href="privacy-policy.html" ng-click="footer( 'Privacy Policy') ">Privacy Policy</a>
+    <a href="legal.html" ng-click="footer( 'Legal') ">Legal</a>
+    </div>
+    <!-- <div class="payoptionarea ">
+    <span>Payment Methods</span>
+    <svg>
+    <use xlink:href="images/sprite.svg#paymentops"></use>
+    </svg>
+    </div>
+    <div class="disclaimersarea">
+    <p>
+    <span> DISCLAIMER:</span> <span>
+    Kindly note that insurejoy.com can share the particulars of clients/visitors with the insurers for the purpose of soliciting
+    insurance policies. Insurance is the subject matter of Solicitation. For more details on risk factors, terms and conditions please read
+    sales brochure carefully before concluding a sale. Tax benefits are subject to changes in taxation laws. Terms and Conditions shall apply
+    for standard insurance plans. Product Information is authentic and solely based on the information received from the insurer
+    </span>
+    </p> -->
+    <span>
+    Copyright 2022 MyCompany.com. All Rights Reserved.
+    </span>
+    </div>
+    </div>
+    </div>
+    </footer><link href="sass/animate.min.css" rel="stylesheet" type="text/css" />
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="80bdba7418f321d17e500fe2-text/javascript" src="insurejoy-lib/external.min.js"></script>
+
+<script type="80bdba7418f321d17e500fe2-text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="80bdba7418f321d17e500fe2-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742554f87fcb4cdd","token":"21d39aec2919455496f3629a9add23fe","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.insurejoy.com/life-insurance by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Aug 2022 12:37:17 GMT -->
+</html>
